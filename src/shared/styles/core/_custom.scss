@@ -1,0 +1,67 @@
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+input,
+textarea {
+  --tw-ring-shadow: 0 0 #000 !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// .ql-toolbar,
+// .ql-container {
+//   border-color: #f1f5f9 !important;
+//   background: white !important;
+// }
+
+// .ql-editor img {
+//   width: 100px;
+//   height: 100px;
+// }
+
+.ql-formats:not(:last-child) {
+  border-right: 1px solid #aaa !important;
+  padding: 0rem 0.25rem !important;
+  margin: 0 !important;
+}
+
+.ql-container {
+  border-bottom: 0 !important;
+}

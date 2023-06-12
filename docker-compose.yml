@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: fe
+    image: fe
+    build:
+      context: .
+      target: fe-development
+    restart: always
+    volumes:
+      - ./:/app
+    ports:
+      - 3000:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
